@@ -1,0 +1,224 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+
+.ul{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.ul > a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.button{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    font-weight: 800;
+    background-color: red;
+    color: white;
+}
+
+
+.section{
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(41, 38, 38); */
+    background-image: url("bg.jpg");
+    background-size: cover;
+    height: 70vh;
+
+}
+
+.section  h1{
+    color:white;
+    font-size: 2rem;
+}
+
+.section h3{
+    color:red;
+}
+
+
+.section p{
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+.header > h1{
+    margin-left: -25rem;
+}
+
+.ul > a li{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.ul > a:hover{
+    background-color:red;
+    color: white;
+    border-radius: 0.5rem;
+    
+}
+
+.img{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+.img:hover{
+    transform:rotate(360deg);
+    height:280px;
+    width: 280px;
+    border-radius: 20px 60px 20px;
+    
+
+}
+
+.section1{
+    position: absolute;
+    left: 10rem;
+    top: 13rem;
+    font-size: 2rem;
+}
+
+.section2{
+    position: absolute;
+    left: 45rem;
+    top: 10rem;
+}
+
+span{
+    color:rgb(135, 135, 46);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button1 > button {
+    background-color: rgb(170, 96, 96);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.img2{
+    height:280px;
+    width: 250px;
+    transition: all 1s ease-in-out;
+    
+}
+
+.img2:hover{
+    height: 320px;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-decoration-color: rgb(208, 19, 161);
+    text-align: center;
+    color: rgb(85, 85, 208);
+}
+
+.info{
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+.cv-button > button{
+    background-color: red;
+    color: white;
+    margin-top: 2rem;   
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+
+}
+
+.skills-menu{
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 4rem;
+
+    
+}
+
+.skills-menu > div{
+    height: 280px;
+    width: 250px;
+    background-color: rgb(240, 172, 15);
+    border-radius: 2rem;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all 1s ease-in-out;
+    padding-bottom:0.3rem;
+    
+}
+
+.skills-menu > div:hover{
+    height: 150px;
+    color:black;
+}
+
+.skills-img{
+    height: 170px;
+    width: 250px;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.skills{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-decoration-color: rgb(208, 19, 161);
+    text-align: center;
+    color: rgb(85, 85, 208);
+}
+
+
+.skills-menu > div p{
+    color: rgb(42, 6, 6);
+    font-size:0.9rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:900;
+}
+
+.skills-menu > div p:hover{
+    background-color:
+}
+
+.contact-section{
+    background-color: rgb(23, 20, 20);
+}
+
+.contact-info{
+    color: white;
+}
