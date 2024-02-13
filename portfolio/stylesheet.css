@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
 *{
     box-sizing:border-box;
     padding: 0;
@@ -172,28 +177,37 @@ span{
     
 }
 
-.skills-menu > div{
-    height: 280px;
+/* .skills-menu > div{
+    height: 295px;
     width: 250px;
     background-color: rgb(240, 172, 15);
     border-radius: 2rem;
     margin: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transition: all 1s ease-in-out;
-    padding-bottom:0.3rem;
+    padding:0.6rem;
     
+} */
+
+.skills-menu > div {
+    width: 100%;
+    max-width: 200px; /* Adjust the max-width based on your design */
+    margin-bottom: 20px;
 }
 
-.skills-menu > div:hover{
+
+/* .skills-menu > div:hover{
     height: 150px;
     color:black;
-}
+} */
 
 .skills-img{
     height: 170px;
     width: 250px;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 0.5rem;
+    margin-left: -0.51rem;
+    margin-top: -1rem;
 }
 
 .skills{
@@ -215,11 +229,13 @@ span{
 }
 
 .skills-menu > div p:hover{
-    background-color:
+    background-color: rgb(57, 47, 47);
+    color: white;
 }
 
 .contact-section{
-    background-color: rgb(23, 20, 20);
+    margin-top: 2rem;
+    background-color: rgb(73, 64, 64);
     width: 100%;
 }
 
@@ -239,10 +255,19 @@ form {
     grid-column: span 2;
 }
 
-input, textarea {
+input {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="textarea"] {
     padding: 10px;
     box-sizing: border-box;
     width: 100%;
+    height: 8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -251,6 +276,7 @@ input[type="submit"] {
     background-color: #4caf50;
     color: white;
     cursor: pointer;
+    width: 30%;
 }
 
 input[type="submit"]:hover {
@@ -263,25 +289,55 @@ input[type="submit"]:hover {
 .contact-form-container{
     display: flex;
     justify-content: space-around;
+    margin-top: 2rem;
+    width: 100%;
 }
+
 .contact-div{
     align-items: center;
+    padding: 2rem;
 }
 
 .send-message{
     text-align: center;
+
 }
 
 .send-message > h1{
-    color: aliceblue;
+    color: rgb(191, 188, 188);
     font-size: 3rem;
+}
+
+.send-message > p{
+    color: rgb(255, 250, 250);
+    /* font-size: rem; */
 }
 .form-conatainer{
     background-color: white;
-    width: 70vw;
+    width: 30%;
     border-radius: 1rem;
     box-shadow: 0 0 128px 0 rgba(121, 50, 50, 0.1),0 32px 64px -48px rgb(0,0,0,0.5);
-    padding: 3rem;
+    padding: 4rem;
+}
+
+.C-details{
+    margin-top: 6rem;
+    color: white;
+}
+
+hr{
+
+}
+
+.C-details > h1{
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.C-details > div span{
+    color: white;
+    font-size: 2rem;
 }
 
 
@@ -296,5 +352,155 @@ input[type="submit"]:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .form-conatainer{
+        background-color: white;
+        width: 100vw;
+    
+        border-radius: 1rem;
+        box-shadow: 0 0 128px 0 rgba(121, 50, 50, 0.1),0 32px 64px -48px rgb(0,0,0,0.5);
+        padding: 4rem;
+    }
+
+    .skills-menu{
+        display: block;
+
+    }
+}
+/* Add these styles to your existing CSS */
+
+.contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.form-conatainer {
+    width: 100%;
+    max-width: 600px; /* Set your preferred maximum width */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.C-details {
+    width: 100%;
+    max-width: 400px; /* Set your preferred maximum width */
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-form-container {
+        justify-content: space-between;
+    }
+
+    .form-conatainer {
+        width: 48%; /* Adjust the width as needed */
+    }
+
+    .C-details {
+        margin-top: 0;
+    }
+}
+
+/* Add these styles to your existing CSS */
+
+/* General styles for skills and services sections */
+.skills {
+    text-align: center;
+}
+
+.skills-menu {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: space-around;
+}
+
+/* Individual item styles */
+
+.skills-img {
+    max-width: 100%;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+    .skills-menu > div {
+        width: 48%; /* Adjust the width as needed for a two-column layout */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills-menu > div {
+        width: 30%; /* Adjust the width as needed for a three-column layout */
+    }
+}
+
+/* Add these styles to your existing CSS */
+
+/* General styles for header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* General styles for section */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section1 {
+    flex: 1;
+    padding: 20px;
+}
+
+.section2 {
+    flex: 1;
+    text-align: center;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+    }
+
+    .section1 {
+        order: 2;
+    }
+
+    .section2 {
+        order: 1;
     }
 }
