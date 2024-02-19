@@ -8,34 +8,71 @@
     box-sizing:border-box;
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 
 .header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+   
+    position: relative;
+    max-width: 100%;
+    margin: 5px auto;
+    box-sizing: border-box;
+    border-radius: 1rem;
     align-items: center;
-    /* flex-direction: column; */
-    /* background-color: white; */
+    justify-content: center;
+    flex-direction: column; 
+    /* background-color: rgb(202, 81, 81); */
+    
     position: sticky;
     top: 0;
     z-index: 2;
 
+
 }
 
-.ul{
-    display: flex;
-    gap: 2.5rem;
+
+nav{
+    float: right;
+    /* display: flex; */
+    
 }
 
-.ul > a {
-    list-style: none;
+.clearfix{
+    clear: both;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+   
+} 
+
+nav ul a li{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: rgb(8, 8, 150);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+nav ul > a {
     text-decoration: none;
+}
+nav ul a li.active,
+nav ul a li:hover{
+    background:red;
+    color: white;
+    transition: 0.5s;
+
+
 }
 
 .button{
-    padding: 0.5rem;
+    text-align: center;
+    padding: 0.2rem;
     border-radius: 2rem;
     font-weight: 800;
     background-color: red;
@@ -117,11 +154,17 @@
     font-size: 1rem;
 }
 
+ .header > div {
+    display: flex;
 
+} 
 
-.header > h1{
-    margin-left: -25rem;
-}
+.header >  h1{
+    margin-left: 2rem;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+} 
 
 .ul > a li{
     font-size: 1.5rem;
@@ -163,7 +206,7 @@
     top: 10rem;
 }
 
-.header > h1 > span{
+.header >  h1 > span{
     color:rgb(135, 135, 46);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -444,6 +487,46 @@ hr{
     width: 30px;
     color:white;
 }
+.contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.form-conatainer {
+    width: 100%;
+    max-width: 600px; 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.C-details {
+    width: 100%;
+    max-width: 400px; 
+    margin-top: 20px;
+}
+
+.skills {
+    text-align: center;
+}
+
+
+
+
+
+.skills-img {
+    max-width: 100%;
+}
+
 
 @media only screen and (max-width:840px){
     .contact-form-container{
@@ -472,35 +555,8 @@ hr{
 
     }
 }
-/* Add these styles to your existing CSS */
 
-.contact-form-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-}
 
-.form-conatainer {
-    width: 100%;
-    max-width: 600px; /* Set your preferred maximum width */
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.C-details {
-    width: 100%;
-    max-width: 400px; /* Set your preferred maximum width */
-    margin-top: 20px;
-}
 
 @media screen and (min-width: 768px) {
     .contact-form-container {
@@ -518,20 +574,32 @@ input, textarea {
 
 
 
+@media screen and (min-width: 768px) {
+    .menu-toggle{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+        background: #ccc;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #069370;
+        
+    }
 
-.skills {
-    text-align: center;
+     .menu-toggle:before {
+        content: '\f0c9';  /* Use '\` before the hexadecimal code */
+        font-family: 'FontAwesome';  /* Make sure the font family name is correct and in quotes */
+        line-height: 40px;
+    }
+    
 }
 
 
 
 
-
-.skills-img {
-    max-width: 100%;
-}
-
-/* Media queries for responsiveness */
 @media screen and (min-width: 768px) {
     .skills-menu > div {
         width: 48%; /* Adjust the width as needed for a two-column layout */
@@ -539,9 +607,17 @@ input, textarea {
 
     .services-menu > div {
         width: 48%; /* Adjust the width as needed for a two-column layout */
-    }
+    } 
 }
 
+@media screen and (max-width:768px) {
+    .header{
+        margin: 20px;
+       
+       
+    } 
+    
+}
 @media screen and (min-width: 1024px) {
     .skills-menu > div {
         width: 60%;
@@ -551,5 +627,9 @@ input, textarea {
     .services-menu > div {
         width: 60%; /* Adjust the width as needed for a three-column layout */
     }
+
+    
 }
 
+
+    
