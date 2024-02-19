@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 
 
@@ -25,7 +26,6 @@
 
 .ul{
     display: flex;
-    flex-direction: ;
     gap: 2.5rem;
 }
 
@@ -47,13 +47,62 @@
     display: flex;
     justify-content: center;
     /* background-color: rgb(41, 38, 38); */
-    background-image: url("./images/bg.jpg");
+    background-image: url("./images/backg\ \(1\).jpg");
     background-size: cover;
     height: 70vh;
+    width: 100%;
 
 }
+.info-main{
+    display: flex;
+}
 
-.section  h1{
+
+.info{
+    margin-left: 2rem;
+    line-height: 90px;
+    height: 90px            ;
+    overflow: hidden;
+    
+}
+
+
+.info > li{
+    font-size: 2rem;
+    list-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    font-weight: 800;
+    position: relative;
+}
+
+.info li ::after{
+    content: "";
+    position: absolute;
+    left: 0 ;
+    /* background-color: rgb(53, 55, 12); */
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid red;
+    animation: typing 3s steps(10);
+    infinite:
+}
+
+
+
+
+
+@keyframes typing{
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.info-main h1{
     color:white;
     font-size: 2rem;
 }
@@ -103,10 +152,9 @@
 }
 
 .section1{
-    position: absolute;
-    left: 10rem;
-    top: 13rem;
-    font-size: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .section2{
@@ -115,7 +163,7 @@
     top: 10rem;
 }
 
-span{
+.header > h1 > span{
     color:rgb(135, 135, 46);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -155,10 +203,7 @@ span{
     color: rgb(85, 85, 208);
 }
 
-.info{
-    line-height: 2rem;
-    font-size: 1rem;
-}
+
 
 .cv-button > button{
     background-color: red;
@@ -169,32 +214,47 @@ span{
 
 }
 
-.skills-menu{
+.skills-menu ,.services-menu{
     display: flex;
     gap: 0.5rem;
     margin-left: 4rem;
-
-    
 }
 
+
+.skills-menu ,.services-menu{
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: space-around;
+    margin: 2rem;
+} 
+
+ 
 /* .skills-menu > div{
     height: 295px;
     width: 250px;
-    background-color: rgb(240, 172, 15);
+ background-color: rgb(240, 172, 15);
     border-radius: 2rem;
     margin: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    transition: all 1s ease-in-out;
-    padding:0.6rem;
-    
-} */
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+}*/
 
-.skills-menu > div {
+ .skills-menu > div {
     width: 100%;
-    max-width: 200px; /* Adjust the max-width based on your design */
-    margin-bottom: 20px;
-}
+    max-width: 250px; /* Adjust the max-width based on your design */
+    margin-bottom: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 1rem;
 
+} 
+
+.services-menu > div {
+    width: 100%;
+    max-width: 250px; /* Adjust the max-width based on your design */
+    margin-bottom: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 1rem;
+} 
 
 /* .skills-menu > div:hover{
     height: 150px;
@@ -211,6 +271,7 @@ span{
 }
 
 .skills{
+    margin: 2rem;
     font-size: 2rem;
     font-weight: 800;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -222,19 +283,56 @@ span{
 
 
 .skills-menu > div p{
+    background-color: aliceblue;
     color: rgb(42, 6, 6);
     font-size:0.9rem;
     font-family: 'Work Sans', sans-serif;
     font-weight:900;
+    padding: 1rem;
+
+
+}
+
+.services-menu > div p{
+    background-color: aliceblue;
+    color: rgb(42, 6, 6);
+    font-size:0.9rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:900;
+    padding: 1rem;
+
+
+
+}
+
+.skills-menu > div h1{
+    color: rgb(85, 85, 208);
+
+}
+
+.services-menu > div h1{
+    color: rgb(85, 85, 208);
+
+}
+
+
+
+.services-menu > div p:hover{
+    background-color: rgb(251, 22, 22);
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .skills-menu > div p:hover{
-    background-color: rgb(57, 47, 47);
+    background-color: rgb(251, 22, 22);
     color: white;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .contact-section{
-    margin-top: 2rem;
+    margin-top: 4rem;
     background-color: rgb(73, 64, 64);
     width: 100%;
 }
@@ -326,7 +424,7 @@ input[type="submit"]:hover {
 }
 
 hr{
-
+    color: red;
 }
 
 .C-details > h1{
@@ -364,6 +462,12 @@ hr{
     }
 
     .skills-menu{
+        display: block;
+
+    }
+
+    
+    .services-menu{
         display: block;
 
     }
@@ -412,20 +516,16 @@ input, textarea {
     }
 }
 
-/* Add these styles to your existing CSS */
 
-/* General styles for skills and services sections */
+
+
 .skills {
     text-align: center;
 }
 
-.skills-menu {
-    display: flex;
-    flex-wrap:wrap-reverse;
-    justify-content: space-around;
-}
 
-/* Individual item styles */
+
+
 
 .skills-img {
     max-width: 100%;
@@ -436,11 +536,20 @@ input, textarea {
     .skills-menu > div {
         width: 48%; /* Adjust the width as needed for a two-column layout */
     }
+
+    .services-menu > div {
+        width: 48%; /* Adjust the width as needed for a two-column layout */
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .skills-menu > div {
-        width: 30%; /* Adjust the width as needed for a three-column layout */
+        width: 60%;
+       
+    }
+
+    .services-menu > div {
+        width: 60%; /* Adjust the width as needed for a three-column layout */
     }
 }
 
