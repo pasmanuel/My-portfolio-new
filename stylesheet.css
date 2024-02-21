@@ -649,6 +649,10 @@ input, textarea {
         z-index: 999;
       }
 
+      .section::before {
+        filter: blur(0); /* You can adjust the blur value as needed */
+    }
+
 }
 
 @media only screen and (max-width:840px){
