@@ -86,30 +86,46 @@ nav ul a li:hover{
     /* background-color: rgb(41, 38, 38); */
     background-image: url("./images/backg\ \(1\).jpg");
     background-size: cover;
-    height: 70vh;
+    height:100vh;
     width: 100%;
 
 }
 .info-main{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .info{
     margin-left: 2rem;
+    /* margin-top: ; */
     line-height: 90px;
-    height: 90px            ;
-    overflow: hidden;
+    height: 90px;
+     overflow: hidden;  
     
 }
 
 
 .info > li{
-    font-size: 2rem;
+    font-size: 3rem;
     list-style: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: red;
     font-weight: 800;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(3)
+    infinite;
+}
+
+@keyframes  slide {
+     100%{
+        top: -279px;
+     }
+}
+
+.info > li{
     position: relative;
 }
 
@@ -121,8 +137,8 @@ nav ul a li:hover{
     height: 100%;
     width: 100%;
     border-left: 2px solid red;
-    animation: typing 3s steps(10);
-    infinite:
+    animation: typing 3s steps(10)
+    infinite;
 }
 
 
@@ -140,13 +156,13 @@ nav ul a li:hover{
 }
 
 .info-main h1{
-    color:white;
-    font-size: 2rem;
+    color:black;
+    font-size: 3rem;
 }
 
-.section h3{
+/* .section h3{
     color:red;
-}
+} */
 
 
 .section p{
@@ -195,9 +211,10 @@ nav ul a li:hover{
 }
 
 .section1{
-   display: flex;
+   display: block;
    justify-content: center;
    align-items: center;
+   margin: auto;
 }
 
 .section2{
@@ -466,9 +483,15 @@ input[type="submit"]:hover {
     color: white;
 }
 
-hr{
-    color: red;
-}
+
+hr {
+    border: none; 
+    height: 3px; 
+    width: 100px;
+    background-color: red; 
+    margin: 20px 0; 
+  }
+  
 
 .C-details > h1{
     margin-bottom: 1rem;
@@ -616,8 +639,12 @@ input, textarea {
        
        
     } 
-    
+    nav ul a li{
+        display: none;
+    }
 }
+
+
 @media screen and (min-width: 1024px) {
     .skills-menu > div {
         width: 60%;
