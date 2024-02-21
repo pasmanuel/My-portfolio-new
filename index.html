@@ -19,21 +19,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body id="home">
-    <header class="header">
-
-        <!-- <img src="./images/logo.jpg" alt="" height="50px"  width="50px"> -->
-        <h1><span>Pas</span>manuel</h1>
-        <div class="menu-toggle"></div>
+    <header class="navigation-header">
         <nav>
-            <ul>
-                <a href="#home" ><li class="active">Home</li></a>
-                <a href="#about"><li>About</li></a>
-                <a href="#skills"><li>Skills</li></a>
-                <a href="#services"><li>Services</li></a>
-                <a  href="#contact"><li>Contact</li></a>
-            </ul>
+            <div class="logo-container">
+                <a href="index.html">
+                    <span>Pas</span>manuel
+                </a>
+            </div>
+            <div class="navigation-items" id="navigationItems">
+                <a href="#home" class="active">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span id="openHam">&#9776;</span>
+                <span id="closeHam">&#x2716;</span>
+            </div>
         </nav>
-        <div class="clearfix"></div>
+        
     </header>
     <section class="section">
         <div class="section1">
@@ -186,5 +190,7 @@
         <p> All right Reserved &COPY; Emmanuel Oppong, 2024 </p>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
