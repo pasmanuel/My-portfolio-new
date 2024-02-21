@@ -649,7 +649,7 @@ input, textarea {
         z-index: 999;
       }
       .section::before {
-        /* content: '';
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
@@ -657,9 +657,13 @@ input, textarea {
         left: 0;
         background-image: url("./images/backg\ \(2\).jpg");
         background-position: center;
-        background-size: cover; */
+        background-size: cover;
         filter: blur(none); /* You can adjust the blur value as needed */
         z-index: -1;
+    }
+
+    .navigation-header{
+        position: fixed;
     }
 
 }
