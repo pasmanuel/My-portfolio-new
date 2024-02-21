@@ -158,7 +158,7 @@ section::before {
     background-image: url("./images/backg\ \(2\).jpg");
     background-position: center;
     background-size: cover;
-    filter: blur(2px); /* You can adjust the blur value as needed */
+    filter: blur(1px); /* You can adjust the blur value as needed */
     z-index: -1;
 }
 
