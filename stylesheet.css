@@ -648,9 +648,18 @@ input, textarea {
         gap: 10vh;
         z-index: 999;
       }
-
       .section::before {
-        filter: blur(0); /* You can adjust the blur value as needed */
+        /* content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("./images/backg\ \(2\).jpg");
+        background-position: center;
+        background-size: cover; */
+        filter: blur(none); /* You can adjust the blur value as needed */
+        z-index: -1;
     }
 
 }
