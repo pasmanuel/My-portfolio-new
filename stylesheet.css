@@ -15,7 +15,7 @@ body{
     height: 100vh;
 }
 .navigation-header {
-     background-color: rgb(202, 81, 81);
+    background-color: rgb(73, 64, 64);
     padding: 0 15px;
     height: 60px;
     width: 100%;
@@ -37,11 +37,12 @@ body{
   }
 
   .logo-container > a {
-    color: rgb(165, 158, 19);
     text-decoration: none;
     font-weight: 700;
     font-size: 26px;
+    color:yellowgreen;
   }
+    
 
 
   .logo-container > a span{
@@ -54,7 +55,7 @@ body{
   }
 
   .navigation-items > a {
-    color:blue;
+    color:white;
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
@@ -63,7 +64,7 @@ body{
   .navigation-items .active,
   .navigation-items > a:hover
   {
-    color: red;
+    color:yellowgreen;
   
   }
 
@@ -71,7 +72,7 @@ body{
     display: none;
     font-size: 20px;
     font-weight: 800;
-    color: white;
+   
   }
 
   #closeHam, #openHam{
@@ -148,24 +149,29 @@ body{
     overflow: hidden;
 }
 
-section::before {
+.section::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("./images/backg\ \(2\).jpg");
+    background-image: url("./images/code3.jpg");
     background-position: center;
     background-size: cover;
-    filter: blur(1px); /* You can adjust the blur value as needed */
+    filter: blur(1.5px); /* You can adjust the blur value as needed */
     z-index: -1;
 }
 
 .info-main{
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.ter-header-description{
+    color: rgb(73, 64, 64);
 }
 
 
@@ -174,7 +180,7 @@ section::before {
     /* margin-top: ; */
     line-height: 90px;
     height: 90px;
-     overflow: hidden;  
+    overflow: hidden;  
     
 }
 
@@ -205,11 +211,11 @@ section::before {
     content: "";
     position: absolute;
     left: 0 ;
-    /* background-color: rgb(53, 55, 12); */
+    /* background-color:rgb(250, 249, 249); */
     height: 100%;
     width: 100%;
-    border-left: 2px solid red;
-    animation: typing 3s steps(10)
+    border-left: 2px solid greenyellow;
+    animation: typing 4s steps(10)
     infinite;
 }
 
@@ -238,8 +244,13 @@ section::before {
 
 
 .section p{
-    color: white;
-    font-size: 1rem;
+  color: rgb(24, 49, 128);
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style:oblique;
+    
 }
 
  .header > div {
@@ -299,13 +310,24 @@ section::before {
     color:rgb(135, 135, 46);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    margin-top: 2rem;
+    gap: 2rem;
+}
 .button1 > button {
-    background-color: rgb(170, 96, 96);
-    padding: 0.3rem;
+   
+    align-items: center;
+    background-color: black;
+    padding: 0.6rem;
     border-radius: 1rem;
     font-size: 1rem;
     color: white;
+    
 }
 
 
@@ -328,8 +350,10 @@ section::before {
 .about{
     font-size: 2rem;
     font-weight: 800;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* text-decoration: underline; */
     text-decoration-color: rgb(208, 19, 161);
     text-align: center;
     color: rgb(85, 85, 208);
@@ -406,11 +430,13 @@ section::before {
     margin: 2rem;
     font-size: 2rem;
     font-weight: 800;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* text-decoration: underline; */
     text-decoration-color: rgb(208, 19, 161);
     text-align: center;
-    color: rgb(85, 85, 208);
+    color: yellowgreen;
 }
 
 
@@ -564,6 +590,8 @@ hr {
     margin: 20px 0; 
   }
   
+  
+
 
 .C-details > h1{
     margin-bottom: 1rem;
@@ -665,7 +693,22 @@ input, textarea {
     .navigation-header{
         position: fixed;
     }
+.info-main{
+    /* padding: 1rem; */
+}
+.info > li ,.info-main h1{
+    font-size: 2.2rem;
+}
 
+.section p{
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .section p span{
+    display: flex;
+    justify-content: center;
+}
 }
 
 @media only screen and (max-width:840px){
@@ -677,7 +720,7 @@ input, textarea {
 
     .form-conatainer{
         background-color: white;
-        width: 100vw;
+        width: 100%;
     
         border-radius: 1rem;
         box-shadow: 0 0 128px 0 rgba(121, 50, 50, 0.1),0 32px 64px -48px rgb(0,0,0,0.5);
@@ -694,6 +737,8 @@ input, textarea {
         display: block;
 
     }
+
+    
 }
 
 
@@ -740,9 +785,9 @@ input, textarea {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (-width: 768px) {
     .skills-menu > div {
-        width: 48%; /* Adjust the width as needed for a two-column layout */
+        width: 80%; /* Adjust the width as needed for a two-column layout */
     }
 
     .services-menu > div {
@@ -752,7 +797,7 @@ input, textarea {
 
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .skills-menu > div {
         width: 60%;
        
@@ -762,6 +807,10 @@ input, textarea {
         width: 60%; /* Adjust the width as needed for a three-column layout */
     }
 
+    .section p span{
+        display: flex;
+        justify-content: center;
+    }
     
 }
 
