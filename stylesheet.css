@@ -61,6 +61,7 @@ body{
     font-size: 20px;
     transition: .4s ease-in-out;
   }
+
   .navigation-items .active,
   .navigation-items > a:hover
   {
@@ -669,13 +670,14 @@ input, textarea {
         position: absolute;
         right: 0;
         top: 58px;
-        background-color: white;
+        background-color: rgb(73, 64, 64);
         width: 100%;
         height: calc(100vh - 58px);
         padding-top: 60px;
         gap: 10vh;
         z-index: 999;
       }
+
       .section::before {
         content: '';
         position: absolute;
@@ -694,10 +696,15 @@ input, textarea {
         position: fixed;
     }
 .info-main{
-    /* padding: 1rem; */
+ padding: 2rem;
 }
 .info > li ,.info-main h1{
-    font-size: 2.2rem;
+    font-size: 1.5rem;
+    margin-right: 0.2rem;
+}
+
+.info{
+    margin-left: 0.8rem;
 }
 
 .section p{
