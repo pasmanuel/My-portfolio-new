@@ -378,7 +378,7 @@ body{
 .skills-menu ,.services-menu{
     display: flex;
     gap: 0.5rem;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
 }
 
 
@@ -822,16 +822,16 @@ input, textarea {
         padding: 4rem;
     }
 
-    .skills-menu{
+    /* .skills-menu{
         display: block;
 
-    }
+    } */
 
     
-    .services-menu{
+    /* .services-menu{
         display: block;
 
-    }
+    } */
 
     
 }
@@ -885,9 +885,9 @@ input, textarea {
         width: 80%; /* Adjust the width as needed for a two-column layout */
     }
 
-    .services-menu > div {
+ .services-menu > div {
         width: 48%; /* Adjust the width as needed for a two-column layout */
-    } 
+    }  
 
    
 }
@@ -912,11 +912,11 @@ input, textarea {
     .skills-menu > div {
         width: 60%;
        
-    }
+    } 
 
     .services-menu > div {
         width: 60%; /* Adjust the width as needed for a three-column layout */
-    }
+    }  
 
     .section p span{
         display: flex;
