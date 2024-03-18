@@ -386,7 +386,7 @@ body{
     display: flex;
     flex-wrap:wrap-reverse;
     justify-content: space-around;
-    margin: 2rem;
+    /* margin: 2rem; */
 } 
 
  
@@ -401,8 +401,8 @@ body{
 }*/
 
  .skills-menu > div {
-    width: 100%;
-    max-width: 250px; /* Adjust the max-width based on your design */
+    /* width: 100%; */
+    max-width: 250px;
     margin-bottom: 20px; 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 1rem;
@@ -410,8 +410,8 @@ body{
 } 
 
 .services-menu > div {
-    width: 100%;
-    max-width: 250px; /* Adjust the max-width based on your design */
+    /* width: 100%; */
+    /* max-width: 250px; Adjust the max-width based on your design */
     margin-bottom: 20px; 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 1rem;
