@@ -910,12 +910,12 @@ input, textarea {
 
 @media screen and (min-width: 768px) {
     .skills-menu > div {
-        width: 60%;
+        width: 100%;
        
     } 
 
     .services-menu > div {
-        width: 60%; /* Adjust the width as needed for a three-column layout */
+        width: 100%; /* Adjust the width as needed for a three-column layout */
     }  
 
     .section p span{
