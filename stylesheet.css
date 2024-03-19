@@ -414,11 +414,12 @@ body{
 
 .skills-img{
     height: 170px;
-    width: 280px;
-    border-top-right-radius: 1.5rem;
-    border-top-left-radius: 0.5rem;
-    margin-left: -0.51rem;
-    margin-top: -1rem;
+    width: 300px;
+    align-items: center;
+    /* border-top-right-radius: 1.5rem; */
+    /* border-top-left-radius: 0.5rem; */
+    /* margin-left: -0.51rem; */
+    /* margin-top: 1rem; */
 }
 
 .skills{
