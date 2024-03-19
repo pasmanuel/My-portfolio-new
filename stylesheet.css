@@ -391,7 +391,7 @@ body{
 
  .skills-menu > div {
     width: 100%; 
-    max-width: 300px;
+    max-width: 310px;
     margin-bottom: 20px; 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 1rem;
@@ -441,7 +441,7 @@ body{
     font-size:0.9rem;
     font-family: 'Work Sans', sans-serif;
     font-weight:900;
-    padding: 1rem;
+    padding: 0.3rem;
 
 }
 
@@ -487,7 +487,7 @@ body{
 
 } 
 
-.marketing-info-divs > div :nth-child(2){
+.marketing-info-div > div :nth-child(2){
     font-size: 2rem;
     margin-left: 3rem;
 
@@ -875,20 +875,29 @@ input, textarea {
 
 
 
-
-@media(min-width: 768px) {
-    
-
-    .skill-menu > div {
-        /* width: 100%; */
-       max-width: 100%;
+@media (min-width: 576px) { /* Assuming 'sm' corresponds to small screen size */
+    .skills-menu > div {
+        width: 100%; 
+        max-width: 310px;
     }
+    .services-menu > div { /* Corrected class name */
+        width: 100%;
+        max-width: 330px;
+    }
+}
 
-.services-menu > div {
-    /* width: 100%; */
-   max-width: 100%;
-}
-}
+
+
+ @media (max-width: 767.98px) { 
+    .skills-menu > div {
+        width: 100%; 
+        max-width: 310px;
+    }
+    .services-menu > div { /* Corrected class name */
+        width: 100%;
+        max-width: 310px;
+    }
+ }
 
 @media only screen and (max-width: 768px) {
     .about-container {
