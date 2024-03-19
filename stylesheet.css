@@ -19,6 +19,7 @@ body{
     padding: 0 15px;
     height: 60px;
     width: 100%;
+    /* max-width: ; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,8 +161,10 @@ body{
     bottom: 0;
     left: 0;
     background-image: url("./images/BG3.jpg");
-    background-position: center;
-    background-size: cover;
+    /* background-position:center; */
+     background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100%;
     filter: blur(none); /* You can adjust the blur value as needed */
     z-index: -1;
 }
@@ -375,43 +378,30 @@ body{
 
 }
 
-.skills-menu ,.services-menu{
-    display: flex;
-    gap: 0.5rem;
-    /* margin-left: 4rem; */
-}
 
 
 .skills-menu ,.services-menu{
     display: flex;
     flex-wrap:wrap-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* margin: 2rem; */
 } 
 
  
-/* .skills-menu > div{
-    height: 295px;
-    width: 250px;
- background-color: rgb(240, 172, 15);
-    border-radius: 2rem;
-    margin: 1rem;
-     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-   
-}*/
 
  .skills-menu > div {
-    /* width: 100%; */
-    max-width: 250px;
+    width: 100%; 
+    max-width: 300px;
     margin-bottom: 20px; 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 1rem;
 
+
 } 
 
 .services-menu > div {
-    /* width: 100%; */
-    /* max-width: 250px; Adjust the max-width based on your design */
+    width: 100%; 
+    max-width: 300px;
     margin-bottom: 20px; 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 1rem;
@@ -424,7 +414,7 @@ body{
 
 .skills-img{
     height: 170px;
-    width: 250px;
+    width: 280px;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 0.5rem;
     margin-left: -0.51rem;
@@ -469,11 +459,14 @@ body{
 
 .skills-menu > div h1{
     color: rgb(85, 85, 208);
+    font-size: 1.5rem;
 
 }
 
 .services-menu > div h1{
     color: rgb(85, 85, 208);
+    font-size: 1.5rem;
+
 
 }
 
@@ -735,9 +728,7 @@ input, textarea {
         z-index: -1;
     }
 
-    .navigation-header{
-        position: fixed;
-    }
+    
 
     .info-main{
  padding: 2rem;
@@ -806,7 +797,7 @@ input, textarea {
     margin-right: 1rem;
 }
 
-@media only screen and (max-width:840px){
+@media only screen and (max-width:768px){
     .contact-form-container{
         display: flex;
         flex-direction: column;
@@ -850,6 +841,11 @@ input, textarea {
     .C-details {
         margin-top: 0;
     }
+
+    .navigation-header{
+        position: fixed;
+        width: auto;
+    }
 }
 
 
@@ -880,16 +876,18 @@ input, textarea {
 
 
 
-@media screen and (-width: 768px) {
-    .skills-menu > div {
-        width: 80%; /* Adjust the width as needed for a two-column layout */
+@media(min-width: 768px) {
+    
+
+    .skill-menu > div {
+        /* width: 100%; */
+       max-width: 100%;
     }
 
- .services-menu > div {
-        width: 48%; /* Adjust the width as needed for a two-column layout */
-    }  
-
-   
+.services-menu > div {
+    /* width: 100%; */
+   max-width: 100%;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -908,15 +906,10 @@ input, textarea {
 
 
 
-@media screen and (min-width: 768px) {
-    .skills-menu > div {
-        width: 100%;
-       
-    } 
+@media screen and (max-width: 768px) {
 
-    .services-menu > div {
-        width: 100%; /* Adjust the width as needed for a three-column layout */
-    }  
+
+    
 
     .section p span{
         display: flex;
