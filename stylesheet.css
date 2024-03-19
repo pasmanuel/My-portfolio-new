@@ -382,7 +382,7 @@ body{
 
 .skills-menu ,.services-menu{
     display: flex;
-    flex-wrap:wrap-reverse;
+    flex-wrap:wrap;
     justify-content: space-evenly;
     /* margin: 2rem; */
 } 
@@ -413,7 +413,7 @@ body{
 } */
 
 .skills-img{
-    height: 170px;
+    height: 200px;
     width: 300px;
     align-items: center;
     /* border-top-right-radius: 1.5rem; */
