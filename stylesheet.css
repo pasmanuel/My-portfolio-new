@@ -104,9 +104,9 @@ body{
 
 .about-container{
     display: flex;
-    justify-content: space-evenly;
+    gap: 3rem;
     width: 1200px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
@@ -130,7 +130,14 @@ body{
     overflow: hidden;
 }
 
+.about-text h1{
+    text-align: center;
+
+}
+
 .about-text{
+    display: block;
+    align-items: center;
     margin-left: 3rem;
 }
 
