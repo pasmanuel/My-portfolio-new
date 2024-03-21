@@ -106,6 +106,7 @@ body{
     display: flex;
     gap: 3rem;
     width: 1200px;
+    margin-top: 2rem;
     /* margin: 50px auto; */
     background-color: #fff;
     padding: 10px;
@@ -160,14 +161,14 @@ body{
     overflow: hidden;
 }
 
-.section::before {
+.bg-custom::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("./images/BG3.jpg");
+    background-image: url("./images/bgg.jpg");
     /* background-position:center; */
      background-size: cover; 
     background-repeat: no-repeat;
@@ -722,21 +723,32 @@ input, textarea {
         z-index: 999;
       }
 
-      .section::before {
+       .bg-custom::before {
         content: '';
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: url("./images/BG3.jpg");
+        background-image: url("./images/bgg.jpg");
         background-position: center;
         background-size: cover;
+        height: 70vh;
         filter: blur(none); /* You can adjust the blur value as needed */
         z-index: -1;
-    }
+    } 
+
+   
 
     
+
+    .carousel-item {
+      height: 70vh;
+      min-height: 300px;
+      width: 100%;
+      background: no-repeat center center scroll;
+      background-size: cover;
+    }
 
     .info-main{
  padding: 2rem;
@@ -911,7 +923,7 @@ input, textarea {
     .about-container {
         display: block;
         width: 100%;
-        margin: 20px auto; /* Adjust margin for smaller screens */
+        margin-top: -10rem; 
         padding: 10px;
     }
     .about-image-info{
