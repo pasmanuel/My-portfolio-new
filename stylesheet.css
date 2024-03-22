@@ -314,6 +314,7 @@ body{
    justify-content: center;
    align-items: center;
    margin: auto;
+   padding-top: 4rem;
 }
 
 .section2{
@@ -742,13 +743,13 @@ input, textarea {
 
     
 
-    .carousel-item {
+     .carousel-item {
       height: 70vh;
       min-height: 300px;
       width: 100%;
       background: no-repeat center center scroll;
       background-size: cover;
-    }
+    } 
 
     .info-main{
  padding: 2rem;
