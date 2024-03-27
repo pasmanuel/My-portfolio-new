@@ -716,7 +716,7 @@ input, textarea {
         position: absolute;
         right: 0;
         top: 58px;
-        background-color: rgb(73, 64, 64);
+        background-color: rgb(73, 64, 64, 0.5);
         width: 100%;
         height: calc(100vh - 58px);
         padding-top: 60px;
