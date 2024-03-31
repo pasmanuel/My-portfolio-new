@@ -62,7 +62,10 @@ body{
     font-size: 20px;
     transition: .4s ease-in-out;
   }
-
+.active{
+    align-items: center;
+    text-align: center;
+}
   .navigation-items .active,
   .navigation-items > a:hover
   {
@@ -154,11 +157,64 @@ body{
 }
 
 .section{
-    display: flex;
+    /* display: flex;
     justify-content: center;
+    align-items: center;
     height:100vh;
-    width: 100%;
+    width: 100%; */
+    /* overflow: hidden; */
+} 
+
+#slider{
     overflow: hidden;
+}
+
+#slider figure{
+     position: relative;
+     margin: 0;
+     left: 0;
+     animation: 20s slider infinite;
+     height: 100vh;
+
+
+}
+
+#slider figure img{
+        float: 20%;
+        width: 100%;
+
+
+}
+
+@keyframes slider{
+    0%{
+        left:0;
+    }
+
+    20%{
+        left:0;
+    }
+
+    25%{
+        left:-100%;
+    }
+
+    45%{
+        left:-100%;
+    }
+
+    50%{
+        left:-200%;
+    }
+    
+    70%{
+        left:-200%;
+    }
+
+
+
+
+
 }
 
 .bg-custom::before {
@@ -716,7 +772,7 @@ input, textarea {
         position: absolute;
         right: 0;
         top: 58px;
-        background-color: rgb(73, 64, 64, 0.5);
+        background-color: rgb(73, 64, 64, 0.81);
         width: 100%;
         height: calc(100vh - 58px);
         padding-top: 60px;
@@ -739,16 +795,21 @@ input, textarea {
         z-index: -1;
     } 
 
-   
-
-    
+/*    
+.carousel-caption{
+    position: relative;
+    top: -10rem;
+    font-size: 10rem;
+}
+     */
 
      .carousel-item {
-      height: 70vh;
-      min-height: 300px;
-      width: 100%;
-      background: no-repeat center center scroll;
-      background-size: cover;
+       height: 100vh; 
+      min-height: 300px; 
+      padding-top: 3.55rem;
+      /* width: 100%; */
+      /* background: no-repeat center center scroll; */
+      /* background-size: cover; */
     } 
 
     .info-main{
