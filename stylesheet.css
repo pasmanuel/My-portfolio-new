@@ -15,7 +15,7 @@ body{
     height: 100vh;
 }
 .navigation-header {
-    background-color: rgb(73, 64, 64);
+    background-color: #230808;
     padding: 0 15px;
     height: 60px;
     width: 100%;
@@ -107,11 +107,13 @@ body{
 
 .about-container{
     display: flex;
+    background-color: #230808;
     gap: 3rem;
     width: 1200px;
     margin-top: 2rem;
     /* margin: 50px auto; */
-    background-color: #fff;
+    /* background-color: #fff; */
+    color: white;
     padding: 10px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -594,7 +596,7 @@ body{
 
 .contact-section{
     margin-top: 4rem;
-    background-color: rgb(73, 64, 64);
+    background-color: #230808;
     width: 100%;
 }
 
@@ -795,29 +797,17 @@ input, textarea {
         z-index: -1;
     } 
 
-/*    
-.carousel-caption{
-    position: relative;
-    top: -10rem;
-    font-size: 10rem;
-}
-     */
 
-     .carousel-item {
-       height: 100vh; 
-      /* min-height: 300px;  */
-      padding-top: 3.55rem;
-      /* width: 100%; */
-      /* background: no-repeat center center scroll; */
-      /* background-size: cover; */
-    } 
-
-    .carousel-item img{
-        height: 100%; 
+      /* .carousel-item {
+        height: 100vh; 
+        min-height: 300px; 
+        padding-top: 3.55rem; 
         width: 100%;
-        background-position: fixed;
-    }
+        background: no-repeat center center scroll; 
+        background-size: cover;
+        }  */
 
+    
     .info-main{
  padding: 2rem;
 }
@@ -912,7 +902,12 @@ input, textarea {
 
     } */
 
-    
+    .carousel-item img{
+        /* height: 100%;  */
+        /* width: 100%; */
+        /* background-position: fixed; */
+    }
+
 }
 
 
@@ -991,7 +986,7 @@ input, textarea {
     .about-container {
         display: block;
         width: 100%;
-        margin-top: -10rem; 
+        margin-top: 1rem; 
         padding: 10px;
     }
     .about-image-info{
