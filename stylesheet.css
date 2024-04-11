@@ -158,6 +158,12 @@ body{
     transition: width 1s;
 }
 
+.carousel-caption h3{
+        color: red;
+        text-align: center;
+        padding-bottom: 3rem;
+}
+
 .section{
     /* display: flex;
     justify-content: center;
