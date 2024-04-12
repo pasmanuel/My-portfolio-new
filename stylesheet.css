@@ -255,10 +255,6 @@ body{
         left:-200%;
     }
 
-
-
-
-
 }
 
 .bg-custom::before {
@@ -288,7 +284,12 @@ body{
     color: rgb(73, 64, 64);
 }
 
-
+footer div p{
+    font-weight: normal;
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+}
 .info{
     margin-left: 2rem;
     /* margin-top: ; */
@@ -599,13 +600,16 @@ body{
 
 .marketing-info-div > div :nth-child(2){
     font-size: 2rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
 
+}
+.number{
+    padding-left: 3rem;
 }
 
 .marketing-info-divs > div :nth-child(3){
     font-size: 1.5rem;
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 
 .marketing-info-divs{
@@ -840,16 +844,7 @@ input, textarea {
     } 
 
 
-      /* .carousel-item {
-        height: 100vh; 
-        min-height: 300px; 
-        padding-top: 3.55rem; 
-        width: 100%;
-        background: no-repeat center center scroll; 
-        background-size: cover;
-        }  */
-
-    
+      
     .info-main{
  padding: 2rem;
 }
@@ -889,13 +884,13 @@ input, textarea {
 .marketing-info-divs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; /* Adjust the gap as needed */
+    gap: 0.3rem; /* Adjust the gap as needed */
 }
 
 .marketing-info-divs span.material-symbols-outlined {
-    /* Icon styling */
+
     font-size: 50px;
-    /* Add more styling properties if necessary */
+   
 }
 
 .marketing-info-divs > div {
@@ -905,17 +900,25 @@ input, textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* justify-content: space-evenly; */
 }
 
 .marketing-info-divs > div :nth-child(2){
     font-size: 1.5rem;
+    padding-right: 2rem;
 
 }
 
 .marketing-info-divs > div :nth-child(3){
     font-size: 1rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
+
+.marketing-info-divs > div :nth-child(1){
+    font-size: 2rem;
+    padding-right: 3.5rem;
+}
+
 
 @media only screen and (max-width:768px){
     .contact-form-container{
