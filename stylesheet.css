@@ -159,11 +159,15 @@ body{
 }
 
 .carousel-caption h3{
-        color: red;
+        color:rgb(12, 14, 10);
         text-align: center;
         padding-bottom: 3rem;
+        font-weight: 700;
 }
-
+.carousel-caption h5{
+    color:rgb(12, 14, 10);
+    font-weight: 700;
+}
 .section{
     /* display: flex;
     justify-content: center;
