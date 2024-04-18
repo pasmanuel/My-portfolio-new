@@ -200,14 +200,22 @@ body{
     color:rgb(12, 14, 10);
     font-weight: 700;
 }
-.section{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    width: 100%; */
-    /* overflow: hidden; */
-} 
+
+
+.carousel-item img {
+    /* margin-top: 3rem; */
+    height: 550px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+  }
+
+  .carousel-caption {
+    top: 60%;
+    transform: translateY(-50%);
+  } 
+
+  .name{
+    font-size: 50px;
+  }
 
 #slider{
     overflow: hidden;
