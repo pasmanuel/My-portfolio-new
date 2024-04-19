@@ -166,7 +166,7 @@ body{
 .number {
     font-size:40px;
     font-weight: bold;
-    /* Other styles as needed */
+    
   }
 
 @keyframes count {
@@ -204,8 +204,8 @@ body{
 
 .carousel-item img {
     /* margin-top: 3rem; */
-    height: 550px; /* Adjust as needed */
-    object-fit: cover; /* Ensure the image covers the entire area */
+    height: 550px; 
+    object-fit: cover; 
   }
 
   .carousel-caption {
@@ -227,9 +227,11 @@ body{
      left: 0;
      animation: 20s slider infinite;
      height: 100vh;
-
-
 }
+
+ .third-slide{
+   font-size: 3rem; 
+} 
 
 #slider figure img{
         float: 20%;
@@ -1078,5 +1080,21 @@ input, textarea {
      }  
 }
 
+.carousel-item img {
+    /* margin-top: 3rem; */
+    height: 300px; 
+    object-fit: cover; 
+  }
+
+  .carousel-caption {
+    top: 60%;
+    transform: translateY(-50%);
+  } 
+
+  .name, .third-slide{
+    font-size: 20px;
+  }
+
+    
 }
 
