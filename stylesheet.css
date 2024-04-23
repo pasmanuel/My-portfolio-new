@@ -223,6 +223,10 @@ body{
     text-shadow: #ccc;
   }
 
+  .carousel-p-size{
+    font-size: 1.5rem;
+}
+
 #slider{
     overflow: hidden;
 }
@@ -1053,6 +1057,10 @@ input, textarea {
     .about-image-info{
         display: block;
         gap: 2rem;
+    }
+
+    .carousel-p-size{
+        font-size: 0.7rem;
     }
     
 }
