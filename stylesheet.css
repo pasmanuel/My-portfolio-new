@@ -91,8 +91,9 @@ body{
 }
 
 .about-img{
-    height: 180px;
-    width: 210px;
+    padding-top: 0.2rem;
+    height: 280px;
+    width: 300px;
     border-radius: 0.5rem;
 }
 
@@ -110,7 +111,7 @@ body{
     background-color: #230808;
     gap: 3rem;
     width: 1200px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     /* margin: 50px auto; */
     /* background-color: #fff; */
     color: white;
@@ -656,7 +657,7 @@ footer div p{
 }
 
 .contact-section{
-    margin-top: 4rem;
+    /* margin-top: 1rem; */
     background-color: #230808;
     width: 100%;
 }
@@ -837,9 +838,9 @@ input, textarea {
         top: 58px;
         background-color: rgb(73, 64, 64, 0.81);
         width: 50%;
-        height: calc(70vh - 58px);
+        height: calc(90vh - 58px);
         padding-top: 60px;
-        gap: 10vh;
+        gap: 7vh;
         z-index: 999;
       }
 
@@ -1046,8 +1047,8 @@ input, textarea {
     .about-container {
         display: block;
         width: 100%;
-        margin-top: 1rem; 
-        padding: 10px;
+        margin-top: -1rem; 
+        padding: 0 10px;
     }
     .about-image-info{
         display: block;
