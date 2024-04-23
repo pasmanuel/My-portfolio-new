@@ -91,10 +91,11 @@ body{
 }
 
 .about-img{
-    padding-top: 5rem;
+    margin: 2rem 0 0 1.5rem;
     height: 250px;
     width: 280px;                   
     border-radius: 1rem;
+    
 }                                                                                                        
 
 .about-info{
@@ -1109,6 +1110,8 @@ input, textarea {
     font-size: 20px;
   }
 
-    
+  .personal-btn{
+    margin: 2rem 0 0 6rem;
+  }  
 }
 
