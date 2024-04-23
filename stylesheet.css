@@ -205,9 +205,13 @@ body{
 .carousel-item img {
     /* margin-top: 3rem; */
     height: 550px; 
+    width: 100%;
     object-fit: cover; 
   }
-
+  .carousel-item {
+    background-color: #f8f8f8; /* or any other color you prefer */
+  }
+  
   .carousel-caption {
     top: 60%;
     transform: translateY(-50%);
@@ -215,6 +219,7 @@ body{
 
   .name{
     font-size: 50px;
+    text-shadow: #ccc;
   }
 
 #slider{
