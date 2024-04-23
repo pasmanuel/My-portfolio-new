@@ -92,10 +92,10 @@ body{
 
 .about-img{
     padding-top: 2rem;
-    height: 280px;
-    width: 300px;
+    height: 250px;
+    width: 280px;                   
     border-radius: 1rem;
-}
+}                                                                                                        
 
 .about-info{
     line-height: 3rem;
