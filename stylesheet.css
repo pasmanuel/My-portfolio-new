@@ -584,13 +584,13 @@ footer div p{
 }
 
 .skills-menu > div h1{
-    color: rgb(85, 85, 208);
+    color: rgb(42, 6, 6);
     font-size: 1.5rem;
 
 }
 
 .services-menu > div h1{
-    color: rgb(85, 85, 208);
+    color: rgb(42, 6, 6);
     font-size: 1.5rem;
 
 
@@ -642,14 +642,14 @@ footer div p{
 
 
 .services-menu > div p:hover{
-    background-color: rgb(251, 22, 22);
+    background-color: rgb(42, 6, 6);
     color: white;
     padding: 1rem;
     border-radius: 1rem;
 }
 
 .skills-menu > div p:hover{
-    background-color: rgb(251, 22, 22);
+    background-color: rgb(42, 6, 6);
     color: white;
     padding: 1rem;
     border-radius: 1rem;
@@ -836,8 +836,8 @@ input, textarea {
         right: 0;
         top: 58px;
         background-color: rgb(73, 64, 64, 0.81);
-        width: 100%;
-        height: calc(100vh - 58px);
+        width: 50%;
+        height: calc(70vh - 58px);
         padding-top: 60px;
         gap: 10vh;
         z-index: 999;
