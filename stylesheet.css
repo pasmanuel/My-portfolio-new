@@ -15,7 +15,7 @@ body{
     height: 100vh;
 }
 .navigation-header {
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
     padding: 0 15px;
     height: 60px;
     width: 100%;
