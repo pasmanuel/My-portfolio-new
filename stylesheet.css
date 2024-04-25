@@ -109,7 +109,7 @@ body{
 
 .about-container{
     display: flex;
-    background-color: #230808;
+    background-color:#171717;
     gap: 3rem;
     width: 1200px;
     margin-top: 1rem;
