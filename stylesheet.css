@@ -15,7 +15,8 @@ body{
     height: 100vh;
 }
 .navigation-header {
-    background-color: rgb(0, 0, 0);
+    background-color:#171717;
+
     padding: 0 15px;
     height: 60px;
     width: 100%;
@@ -81,7 +82,7 @@ body{
   }
 
   #closeHam, #openHam{
-    color: yellow;
+    color:white;
   }
 
 
@@ -109,7 +110,7 @@ body{
 
 .about-container{
     display: flex;
-    background-color:#171717;
+    background-color:#fff;
     gap: 3rem;
     width: 1200px;
     margin-top: 1rem;
@@ -140,8 +141,19 @@ body{
 
 .about-text h1{
     text-align: center;
+    color: #171717;
 
 }
+
+.socials{
+    padding-top: 2rem;
+}
+
+.about-text p{
+    color: #171717;
+
+}
+
 
 .about-text{
     display: block;
@@ -544,13 +556,39 @@ footer div p{
 } */
 
 .skills-img{
-    height: 200px;
-    width: 300px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    
     /* align-items: center; */
     /* border-top-right-radius: 1.5rem; */
     /* border-top-left-radius: 0.5rem; */
     /* margin-left: -0.51rem; */
     /* margin-top: 1rem; */
+}
+
+.skills-img:hover{
+ color: #ccc;   
+}
+
+.image-circle{
+    height: 100px;
+    width: 100px;
+    border: 0.5rem solid #230808;
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+    left: 33%;
+}
+
+.image-circle:hover{
+    background-color:rgb(42, 6, 6,0.3);
+    border: 0.4rem solid #230808;
+   
+
+
 }
 
 .skills{
@@ -562,13 +600,15 @@ footer div p{
     font-style: normal;
     /* text-decoration: underline; */
     text-decoration-color: rgb(208, 19, 161);
+
     text-align: center;
-    color: yellowgreen;
+    color: #230808;
+
 }
 
 
 .skills-menu > div p{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     color: rgb(42, 6, 6);
     font-size:0.9rem;
     font-family: 'Work Sans', sans-serif;
@@ -578,7 +618,7 @@ footer div p{
 }
 
 .services-menu > div p{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     color: rgb(42, 6, 6);
     font-size:0.9rem;
     font-family: 'Work Sans', sans-serif;
@@ -590,14 +630,16 @@ footer div p{
 }
 
 .skills-menu > div h1{
-    color: rgb(42, 6, 6);
+    color: #230808;
     font-size: 1.5rem;
+    text-align: center;
 
 }
 
 .services-menu > div h1{
-    color: rgb(42, 6, 6);
-    font-size: 1.5rem;
+    color: #230808;
+    font-size: 1.3rem;
+    text-align: center;
 
 
 }
@@ -663,7 +705,8 @@ footer div p{
 
 .contact-section{
     /* margin-top: 1rem; */
-    background-color: #230808;
+    background-color:#171717;
+
     width: 100%;
 }
 
@@ -841,7 +884,7 @@ input, textarea {
         position: absolute;
         right: 0;
         top: 58px;
-        background-color: rgb(73, 64, 64, 0.81);
+        background-color: rgba(19, 16, 16, 0.81);
         width: 50%;
         height: calc(90vh - 58px);
         padding-top: 60px;
